@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container row">
+        <form class="form col-3" action="">
+
+            <input id="nome" type="text" placeholder="Nome Completo" required>
+
+            <input id="email" type="email" placeholder="seu@email.com" required>
+
+            <input id="empresa" type="text" placeholder="Empresa">
+
+            <input id="fone" type="text" placeholder="Telefone">
+
+            <select name="motivoContato" id="motivoContato" placeholder="Motivo do Contato">
+                <option value="">Motivo do Contato</option>
+                <option value="elogio">Elogio</option>
+                <option value="problemaProduto">Problema com Produto</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="sugesta">Sugestão</option>
+                <option value="outro">Outro</option>
+            </select>
+
+          <!--   <input id="motivoContato" type="" placeholder="Motivo do Contato" required > -->
+
+            <textarea id="msg" name="msg"  cols="30" rows="10" placeholder="Digite sua Msg" required></textarea>
+
+            <div class="col-2">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
