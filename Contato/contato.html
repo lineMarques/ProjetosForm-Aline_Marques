@@ -9,39 +9,34 @@
 </head>
 
 <body>
-    <div class="container row">
-        <form class="form col-3" action="">
+    <main class="">
+        <div class="container">
+            <form class="form" action="">
+                <fieldset class="box centralizador">
+                    <legend>Deixe seu Recado</legend>
 
-            <input id="nome" type="text" placeholder="Nome Completo" required>
+                    <input id="idNome" type="text" placeholder="Nome Completo" required>
+                    <input id="idEmail" type="email" placeholder="seu@email.com" required>
+                    <input id="idEmpresa" type="text" placeholder="Empresa">
+                    <input id="idFone" type="text" placeholder="Telefone">
 
-            <input id="email" type="email" placeholder="seu@email.com" required>
+                    <select id="idMotivoContato" id="motivoContato" placeholder="Motivo do Contato">
+                        <option class="teste" value="">Motivo do Contato</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="problemaProduto">Problema com Produto</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugesta">Sugestão</option>
+                        <option value="outro">Outro</option>
+                    </select>
 
-            <input id="empresa" type="text" placeholder="Empresa">
+                    <textarea id="msg" name="msg" cols="30" rows="10" placeholder="Digite sua Msg" required></textarea>
 
-            <input id="fone" type="text" placeholder="Telefone">
+                    <button class="btnEnviar" type="submit">Enviar</button>
 
-            <select name="motivoContato" id="motivoContato" placeholder="Motivo do Contato">
-                <option value="">Motivo do Contato</option>
-                <option value="elogio">Elogio</option>
-                <option value="problemaProduto">Problema com Produto</option>
-                <option value="reclamacao">Reclamação</option>
-                <option value="sugesta">Sugestão</option>
-                <option value="outro">Outro</option>
-            </select>
-
-          <!--   <input id="motivoContato" type="" placeholder="Motivo do Contato" required > -->
-
-            <textarea id="msg" name="msg"  cols="30" rows="10" placeholder="Digite sua Msg" required></textarea>
-
-            <div class="col-2">
-                <button type="submit">Enviar</button>
-            </div>
-
-        </form>
-    </div>
-
-
-
+                </fieldset>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
