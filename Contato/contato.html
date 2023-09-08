@@ -5,33 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <title>Contato</title>
 </head>
 
 <body>
-    <main class="">
-        <div class="container">
-            <form class="form" action="">
+    <main class="main">
+        <div class="fundoContainer container">
+            <form class="clform" action="">
                 <fieldset class="box centralizador">
                     <legend>Deixe seu Recado</legend>
 
-                    <input id="idNome" type="text" placeholder="Nome Completo" required>
-                    <input id="idEmail" type="email" placeholder="seu@email.com" required>
-                    <input id="idEmpresa" type="text" placeholder="Empresa">
-                    <input id="idFone" type="text" placeholder="Telefone">
+                    <input id="idNome" class="clInput" type="text" placeholder="Nome Completo" required>
+                    <input id="idEmail" class="clInput" type="email" placeholder="seu@email.com" required>
+                    <input id="idEmpresa" class="clInput" type="text" placeholder="Empresa">
+                    <input id="idFone" class="clInput" type="text" placeholder="Telefone">
 
-                    <select id="idMotivoContato" id="motivoContato" placeholder="Motivo do Contato">
-                        <option class="teste" value="">Motivo do Contato</option>
-                        <option value="elogio">Elogio</option>
-                        <option value="problemaProduto">Problema com Produto</option>
-                        <option value="reclamacao">Reclamação</option>
-                        <option value="sugesta">Sugestão</option>
-                        <option value="outro">Outro</option>
+                    <select id="idMotivoContato" class="clMotivoContato" placeholder="Motivo do Contato">
+                        <option class="clOption" value="">Motivo do Contato</option>
+                        <option class="clOption" value="elogio">Elogio</option>
+                        <option class="clOption" value="problemaProduto">Problema com Produto</option>
+                        <option class="clOption" value="reclamacao">Reclamação</option>
+                        <option class="clOption" value="sugesta">Sugestão</option>
+                        <option class="clOption" value="outro">Outro</option>
                     </select>
 
-                    <textarea id="msg" name="msg" cols="30" rows="10" placeholder="Digite sua Msg" required></textarea>
+                    <textarea id="idMsg" class="clMsg" name="msg" cols="30" rows="10" placeholder="Digite sua Msg"
+                        required></textarea>
 
-                    <button class="btnEnviar" type="submit">Enviar</button>
+                    <button class="btnEnviar btn" type="submit">Enviar</button>
 
                 </fieldset>
             </form>

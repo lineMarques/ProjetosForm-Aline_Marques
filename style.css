@@ -1,45 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(to right, #5922f0, #7e14d9, #ce16f8);
+  background-image: linear-gradient(to right, #4400ff, #8700fd, #d000ff);
 }
 
-main {
-  width: 960px;
+.main {
+  width: 1520px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 200px;
 }
 
-/* estilos contato */
+/* estilos contato ------------------------------------------------------------------------------------------*/
 .container {
-  background-color: #16baf8;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.box {
-  background-color: #fff;
-  border: #2a98c0 solid;
-  border-radius: 2%;
-
-  font-weight: bold;
-  font-size: 2.0em;
-
-  padding: 15px;
-  margin: 50px;
-
-  flex-direction: column;
-}
-
-input,
-select,
-textarea {
+.clMsg,
+.clInput,
+.clMotivoContato {
   margin: 10px;
   padding: 5px 5px;
 
@@ -48,19 +30,85 @@ textarea {
   box-shadow: 1px 2px 1px 2px #ffffffd0;
 }
 
-textarea:focus,
-input:focus,
-select:focus {
+.clMsg:focus,
+.clInput:focus,
+.clMotivoContato:focus {
   border: #2a98c0 1px solid;
   outline: 0;
 }
 
-select {
+.clMotivoContato {
   background-color: #fff;
   color: gray;
 }
 
-.btnEnviar {
+/* Urna Eletronica -------------------------------------------------------------------------------------------*/
+.boxUrna{ 
+  width: 50%;
+}
+.h1UrnaEletronica {
+  margin: 10px;
+}
+.ImgCandidato {
+  width: 23%;
+  margin: 10px;
+}
+
+.nomeCandidato {
+  font-size: larger;
+}
+
+.numeroCandidato {
+  border: 0;
+  border-style: none;
+  outline: 0;
+}
+
+.numeroCandidato:focus {
+  border: 0;
+  border-style: none;
+  outline: 0;
+}
+
+.coluna {
+  align-items: center;
+}
+
+.divBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em;
+}
+.confirmar,
+.cancelar,
+.branco {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* gerais  ------------------------------------------------------------------------------------*/
+
+.fundoContainer {
+  background-color: #abe9ff;
+  border-radius: 1%;
+  box-shadow: 1px 2px 20px;
+}
+
+.box {
+  background-color: #fff;
+  border: #abe9ff88 solid;
+  border-radius: 2%;
+  box-shadow: 1px 2px 20px;
+
+  font-weight: bold;
+  font-size: 2em;
+
+  padding: 15px;
+  margin: 50px;
+}
+
+.btn {
   margin: 10px;
   padding: 5px;
 
@@ -70,14 +118,12 @@ select {
   border: none;
 }
 
-.btnEnviar:hover {
+.btn:hover {
   transform: scale(1.1);
   transition: 0.2s;
 }
 
-/* gerais */
-
 .centralizador {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
