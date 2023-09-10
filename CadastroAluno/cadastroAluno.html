@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Cadastro Aluno</title>
+</head>
+
+<body>
+    <main class="main">
+        <div id="containerCadastroAluno" class="fundoContainer container">
+            <form class="clform" action="">
+                <fieldset id="fieldsetCadastroAluno" class="box centralizador">
+                    <legend>Cadastro de Aluno</legend>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="idNome" class="clInput">
+
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="idSobrenome" class="clInput">
+
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" id="idDataNascimento" class="clInput" min="2000-12-31" max="2017-01-01">
+
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="idEndereco" class="clInput">
+
+                    <label for="nomeMae">Nome da Mãe</label>
+                    <input type="text" id="idMae" class="clInput">
+
+                    <label for="nomePai">Nome do Pai</label>
+                    <input type="text" id="idPai" class="clInput">
+
+                    <label for="email">E-mail</label> <!-- regex validação de email
+                                                                                    \  = uso de metacarateres e literal
+                                                                                    ^  = inicio da linha               
+                                                                                    [a-z0-9.] = caracteres alfanumericos
+                                                                                    +@ = inclusão do @
+                                                                                    [a-z0-9] = caracteres alfanumericos    
+                                                                                    +\. = inclusão do ponto
+                                                                                    [a-z] = Letras minúsculas
+                                                                                    ([a-z]+)? Letras minúsculas opcional
+                                                                                    $ = final de linha
+                                                                                    i = ?
+                                                                            -->
+                    <input type="email" id="idEmail" class="clInput"
+                        pattern="\^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$\i">
+
+                    <label for="tel">Tel.</label>
+                    <input type="tel" id="idTel" class="clInput" pattern="\(\d{2}\) \d{4}-\d{4}">
+
+                    <label for="serie">Série</label>
+                    <input type="number" id="idSerie" class="clInput" min="1" max="9">
+                    
+                    <!-- Radio genero -->
+                    <label for="genero">Sexo</label>
+                    <div class="divGenero">
+                        <div class="alinhamento">
+                            <input type="radio" name="genero" id="idFem" checked>
+                            <label for="idFem">Feminimo</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="radio" name="genero" id="idMas">
+                            <label for="idMas">Masculino</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="radio" name="genero" id="idOutro">
+                            <label for="idOutro">Outro</label>
+                        </div>
+                    </div>
+
+                    <!-- CheckBox Necessidades especiais -->
+                    <label for="pcd">Necessidades Especiais</label>
+                    <div class="divPcd">
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdAuditiva" class="clInput">
+                            <label for="idPcdAuditiva">Deficiência Auditiva</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdMotora" class="clInput">
+                            <label for="idPcdMotora">Deficiência Motora </label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdVisual" class="clInput">
+                            <label for="idPcdVisual">Deficiência Visual</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdCerebral" class="clInput">
+                            <label for="idPcdCerebral">Paralisia Cerebral</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdAutismo" class="clInput">
+                            <label for="idPcdAutismo">Transtorno do Espectro Autista</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdForoPsi" class="clInput">
+                            <label for="idPcdForoPsi">Transtorno do Foro Psicologico</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcd" class="clInput">
+                            <label for="pcd">Transtorno de Aprendizagem</label>
+                        </div>
+
+                        <div class="alinhamento">
+                            <input type="checkbox" name="pcd" id="idPcdAltasHab" class="clInput">
+                            <label for="idPcdAltasHab">Altas Habilidades</label>
+                        </div>
+
+                        <div>
+                            <button id="btnSalvar" class="btn" type="submit">Salvar</button>
+                            <button id="btnReset" class="btn" type="reset">Limpar Tela</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

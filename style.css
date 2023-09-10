@@ -8,7 +8,7 @@ body {
 }
 
 .main {
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
   padding: 200px;
 }
@@ -17,6 +17,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  
 }
 
 .clMsg,
@@ -43,7 +44,7 @@ body {
 }
 
 /* Urna Eletronica -------------------------------------------------------------------------------------------*/
-.boxUrna{ 
+.boxUrna {
   width: 50%;
 }
 .h1UrnaEletronica {
@@ -87,7 +88,20 @@ body {
   padding: 5px;
 }
 
-/* Login--------------------------------------------------------------------------------------- */
+/* Cadastro Aluno--------------------------------------------------------------------------------------- */
+
+#fieldsetCadastroAluno {
+  width: 80%;
+  margin: 20px;
+}
+
+.divGenero{
+  margin: 10px 0; 
+}
+
+.divPcd{
+  margin: 10px -5px 0;
+}
 
 
 
@@ -130,4 +144,12 @@ body {
 .centralizador {
   display: flex;
   flex-direction: column;
+}
+
+.alinhamento {
+  display: flex;
+}
+
+label{
+  font-size: large;
 }
